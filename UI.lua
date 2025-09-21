@@ -309,7 +309,7 @@ UI = {
         Enabled = true,
     },
     Keybinds = {},
-    BackgroundEnabled = true,
+    BackgroundEnabled = false,
 };
 
 UI.ActiveTransparency = 0
@@ -317,8 +317,8 @@ UI.ActiveTransparency = 0
 UI.Theme = UI.Themes['Dark']
 
 
-UI.Chart = loadstring(readfile("UILibrary/Addons/Chart.lua"))().Chart
-UI.KeybindsWidget = loadstring(readfile("UILibrary/Addons/KeybindsWidget.lua"))()
+UI.Chart = loadstring(game:HttpGet("https://github.com/slf0Dev/UI_LIBRARY/raw/refs/heads/main/Chart.lua")().Chart
+UI.KeybindsWidget = loadstring(game:HttpGet("https://github.com/slf0Dev/UI_LIBRARY/raw/refs/heads/main/KeybindsWidget.lua")()
 
 
 
@@ -3388,6 +3388,7 @@ end
 
 	return Elements
 end
+
 
 
 return UI;
